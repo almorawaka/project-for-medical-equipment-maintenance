@@ -60,15 +60,15 @@ include("auth.php");
 <table width="250%" border="1" style="border-collapse:collapse;">
 <thead>
 <tr><th><strong>Job No</strong></th>
-<th><strong>Hospital Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Equipment Name</strong></th>
-<th><strong>Make</strong></th>
-<th><strong>Model</strong></th>
-<th><strong>location</strong></th>
-<th><strong>Staff</strong></th>
-<th><strong>Edit</strong></th>
-<th><strong>Delete</strong></th></tr>
+	<th><strong>Hospital Name</strong></th>
+	<th><strong>Type</strong></th>
+	<th><strong>Equipment Name</strong></th>
+	<th><strong>Make</strong></th>
+	<th><strong>Model</strong></th>
+	<th><strong>location</strong></th>
+	<th><strong>Staff</strong></th>
+	<th><strong>Edit</strong></th>
+	<th><strong>Delete</strong></th>  </tr>
 </thead>
 <tbody>
 <?php
@@ -85,7 +85,7 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 	<td align="center"><?php echo $row["location"]; ?></td>
 	<td align="center"><?php echo $row["s_id"]; ?></td>
 	<td align="center"><a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a></td>
-	<td align="center"><a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a></td></tr>
+	<td align="center"><a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a> </td></tr>
 <?php $count++; } ?>
 </tbody>
 </table>
